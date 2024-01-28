@@ -50,6 +50,17 @@ gen_proxy_file_for_user() {
 $(awk -F "/" '{print $3 ":" $4 ":" $1 ":" $2 }' ${WORKDATA})
 EOF
 }
+gen_proxy_file_for_user1() {
+  cat >/root/doitosan/proxy.txt <<EOF
+$(awk -F "/" '{print $3 ":" $4 ":" $1 ":" $2 }' ${WORKDATA})
+EOF
+}
+gen_proxy_file_for_user2() {
+  cat >/root/xoatosan/proxy.txt <<EOF
+$(awk -F "/" '{print $3 ":" $4 ":" $1 ":" $2 }' ${WORKDATA})
+EOF
+}
+
 
 upload_proxy() {
   local PASS=$(random)
