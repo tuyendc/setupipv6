@@ -134,6 +134,8 @@ EOF
 bash /etc/rc.local
 
 gen_proxy_file_for_user
+gen_proxy_file_for_user1
+gen_proxy_file_for_user2
 
 # upload_proxy
 
