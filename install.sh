@@ -56,12 +56,7 @@ $(awk -F "/" '{print $3 ":" $4 ":" $1 ":" $2 }' ${WORKDATA})
 EOF
 }
 gen_proxy_file_for_user2() {
-  cat >/root/doitosan/proxy.txt <<EOF
-$(awk -F "/" '{print $3 ":" $4 ":" $1 ":" $2 }' ${WORKDATA})
-EOF
-}
-gen_proxy_file_for_user3() {
-  cat >/root/xoatosan/proxy.txt <<EOF
+  cat >/root/scan/proxy.txt <<EOF
 $(awk -F "/" '{print $3 ":" $4 ":" $1 ":" $2 }' ${WORKDATA})
 EOF
 }
