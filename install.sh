@@ -46,7 +46,7 @@ EOF
 }
 
 gen_proxy_file_for_user() {
-  cat >/root/proxy.txt <<EOF
+  cat >/root/tosan/proxy.txt <<EOF
 $(awk -F "/" '{print $3 ":" $4 ":" $1 ":" $2 }' ${WORKDATA})
 EOF
 }
